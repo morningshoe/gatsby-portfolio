@@ -18,7 +18,7 @@ const InstagramCTA = styled.div`
   width: 100%;
   flex-wrap: wrap-reverse;
 
-  @media (mind-width: ${breakpoints.mobileMax}) {
+  @media (min-width: ${breakpoints.mobileMax}) {
     flex-wrap: nowrap;
   }
 `;
@@ -139,7 +139,7 @@ const ProjectLink = styled(Paragraph)`
   text-align: left;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
-  transition: border-bottom: 0.2s;
+  transition: border-bottom 0.2s;
 
   @media (min-width: ${breakpoints.mobileMax}) {
     text-align: right;

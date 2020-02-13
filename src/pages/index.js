@@ -179,14 +179,14 @@ class Page extends React.Component {
           >
             <TextContentWrap>
               <Paragraph>
-                I'm a 32 year old bartender in Los Angeles currently studying
-                studying full stack web development.
+                I'm a 32 year old bartender in Los Angeles currently studying full stack web development.
                 <br />
                 <br />
-                As I've undertaken my journey to full-time developer, I've had
-                the opportunity to learn from some of my seniors. And, along the
+                While undertaking my journey to full-time developer, I've had
+                the opportunity to learn from some of my seniors. Along the
                 way, they have raised my standards for what is expected of a
-                production level web application, and how to write code that is
+                production level web application. Most importantly, however,
+                is that they have ingrained in me the importance of writing code that is
                 maintainable, replicable, and easy to understand.
                 <br />
                 <br />
@@ -194,8 +194,8 @@ class Page extends React.Component {
                 don't come easily. They take hours of dedication, and time spent
                 being frustrated by new concepts. With repitition, however, big
                 problems becomes small problems, and those new concepts become
-                another tool in the toolbox. I'm excited to share my new skills
-                with the world, and evern more excited to learn more!
+                another tool in the toolbox. Not only am I excited to share my new skills
+                with the world, I'm excited to continue to learn!
               </Paragraph>
             </TextContentWrap>
           </Container>
