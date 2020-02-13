@@ -1,12 +1,13 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
-import { Helmet } from "react-helmet"
-import { breakpoints } from "../components/Media"
-import Heading from "../components/Heading"
-import Paragraph from "../components/Paragraph"
-import Layout from "../components/Layout"
-import HeadingWrap from "../components/HeadingWrap/index"
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import { Helmet } from "react-helmet";
+import { breakpoints } from "../components/Media";
+import Footer from "../components/Footer";
+import Heading from "../components/Heading";
+import Paragraph from "../components/Paragraph";
+import Layout from "../components/Layout";
+import HeadingWrap from "../components/HeadingWrap/index";
 
 const Container = styled.div`
   margin: 100px 0 200px 0;
@@ -137,7 +138,7 @@ class Page extends React.Component {
     super(props)
   }
   componentDidMount() {
-    console.log("This portfolio was built by Alex Shoemaker")
+    console.log("This portfolio was built by Alex Shoemaker");
   }
   render() {
     return (
@@ -179,21 +180,22 @@ class Page extends React.Component {
             <TextContentWrap>
               <Paragraph>
                 I'm a 32 year old bartender in Los Angeles currently studying
-                studying full stack web development. I also have a BS in
-                Economics.
+                studying full stack web development.
                 <br />
                 <br />
-                As I have started on my journey as a developer, I've had the
-                opportunity to learn from some senior developers who have raised
-                my standards for what is expected of a production level web
-                application.
-              </Paragraph>
-            </TextContentWrap>
-            <TextContentWrap>
-              <Paragraph>
-                Through my experiences as a developer, I've had the opportunity
-                to create memorable experiences while learning how to write code
-                that is maintainable, replicable, and easy to understand.
+                As I've undertaken my journey to full-time developer, I've had
+                the opportunity to learn from some of my seniors. And, along the
+                way, they have raised my standards for what is expected of a
+                production level web application, and how to write code that is
+                maintainable, replicable, and easy to understand.
+                <br />
+                <br />
+                My experience thus far has taught me that skills such as these
+                don't come easily. They take hours of dedication, and time spent
+                being frustrated by new concepts. With repitition, however, big
+                problems becomes small problems, and those new concepts become
+                another tool in the toolbox. I'm excited to share my new skills
+                with the world, and evern more excited to learn more!
               </Paragraph>
             </TextContentWrap>
           </Container>
@@ -203,13 +205,13 @@ class Page extends React.Component {
                 <TextContent>
                   <Heading>My Skills</Heading>
                   <Paragraph>
-                    Aside from the courses I have taken at the UCLAX Full Stack
-                    Web development Bootcamp, I have also taken a number of
-                    online courses such as{" "}
+                    Aside from the classes taken at the UCLAX Full Stack Web
+                    development Bootcamp, I have also taken a number of online
+                    courses such as{" "}
                     <a
                       title="Dan Abramov, Maggie Appleton - Just JavaScript"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       href="https://www.justjavascript.com"
                     >
                       Dan Abramov and Maggie Appleton's Just JavaScript
@@ -218,7 +220,7 @@ class Page extends React.Component {
                     <a
                       title="Web Application For Everybody"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       href="https://www.coursera.org/specializations/web-applications"
                     >
                       Web Applications for Everybody
@@ -227,7 +229,7 @@ class Page extends React.Component {
                     <a
                       title="The Odin Project - JavaScript"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       href="https://www.theodinproject.com/courses/javascript"
                     >
                       The Odin Project - JavaScript
@@ -236,10 +238,10 @@ class Page extends React.Component {
                     <a
                       title="ES6 for Everyone"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       href="https://es6.io/"
                     >
-                      ES6 for Everyone
+                      ES6 for Everyone with Wes Bos
                     </a>
                   </Paragraph>
                 </TextContent>
@@ -257,7 +259,7 @@ class Page extends React.Component {
                       <span>&#9675;</span> JavaScript ES6
                     </Paragraph>
                     <Paragraph>
-                      <span>&#9675;</span> React
+                      <span>&#9675;</span> React Hooks
                     </Paragraph>
                   </row>
                   <row>
@@ -265,7 +267,7 @@ class Page extends React.Component {
                       <span>&#9675;</span> Express Server
                     </Paragraph>
                     <Paragraph>
-                      <span>&#9675;</span> Styled-Components
+                      <span>&#9675;</span> Styled-Components{' '}
                     </Paragraph>
                   </row>
                   <row>
@@ -292,6 +294,7 @@ class Page extends React.Component {
             </TextContent>
           </SubContainer>
         </Layout>
+        <Footer instagramDisplay='flex' />
       </div>
     )
   }

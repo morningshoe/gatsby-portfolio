@@ -4,9 +4,9 @@ import styled from "styled-components/macro"
 const Email = styled.div`
   color: black;
   font-weight: 700;
-  padding: 5px;
+  padding-bottom: 5px;
   border-bottom: 2px solid black;
-  diplay: inline-block;
+  display: inline-block;
   transition: border-bottom 0.2s;
 
   :hover {

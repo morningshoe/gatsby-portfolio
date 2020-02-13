@@ -19,7 +19,7 @@ function HeadingWrap() {
             <a
               title="Instagram - Morningshoe"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://www.instagram.com/morningshoe/"
             >
               <Social className="insta"></Social>
@@ -27,17 +27,17 @@ function HeadingWrap() {
             <a
               title="Github - Repository"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://www.github.com/morningshoe/"
             >
-              <Social className="github"></Social>
+              <Social className="git"></Social>
             </a>
           </SocialCont>
         </HeadingElements>
         <HeadingMain>
           Hi, I'm Alex. <br />
           Full Stack <span>Developer</span>, <br />
-          Bartender, Fan of Minimalist Design
+          and Fan of Minimalist Design
         </HeadingMain>
       </HeadingWrapCont>
     </Container>

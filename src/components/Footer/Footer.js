@@ -1,10 +1,12 @@
-import React from "react"
-import { Link } from "gatsby"
-import styled from "styled-components/macro"
-import Heading from "../Heading"
-import Paragraph from "../Logo"
-import { breakpoints } from "../Media"
-import ContactEmail from "../ContactEmail"
+import React from "react";
+import { breakpoints } from "../Media";
+import { Link } from "gatsby";
+import styled from "styled-components/macro";
+import Heading from "../Heading";
+import Paragraph from "../Paragraph";
+import ContactEmail from "../ContactEmail";
+import InstagramGrid from "../InstagramGrid";
+
 
 const FooterCont = styled.div`
   width: 100%;
@@ -24,9 +26,14 @@ const FooterCont = styled.div`
   }
 `
 
-const Variable = styled.div`
-  display: ${props => props.projectDisplay || "none"};
-  margin-bottom: 20px;
+// const Variable = styled.div`
+//   display: ${props => props.projectDisplay || "none"};
+//   margin-bottom: 100px;
+//   `;
+
+const Layout = styled.div`
+  padding: 20px;
+  margin: 25px auto;
 
   a {
     text-decoration: none;
@@ -98,16 +105,10 @@ const Social = styled.div`
   }
 `
 
-function Footer() {
+function Footer(props) {
   return (
     <FooterCont>
       <Layout>
-        <Variable projectDisplay={props.projectDisplay}>
-          <Heading>Other Projects</Heading>
-          <SubContainer>
-              {/* <ProjectRow /> */}
-          </SubContainer>
-        </Variable>
         <SubContainer>
           <TextContent>
             <Heading>Let's Build Something</Heading>
@@ -118,26 +119,27 @@ function Footer() {
             <ContactEmail />
           </TextContent>
         </SubContainer>
+        <InstagramGrid instagramDisplay={props.instagramDisplay} />
         <Container>
           <Link title="Home - Alex Shoemaker" to="/">
-            <Logo />
+            Home
           </Link>
           <Social>
             <a
               title="Instagram - Morningshoe"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://www.instagram.com/morningshoe/"
             >
-              <Social className="insta"></Social>
+              Instagram
             </a>
             <a
               title="Github - Repository"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               href="https://www.github.com/morningshoe/"
             >
-              <Social className="github"></Social>
+              Github
             </a>
           </Social>
         </Container>
