@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
 import { Link } from "gatsby";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import { breakpoints } from "../components/Media";
 import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
