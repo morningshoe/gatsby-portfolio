@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components"
 import { breakpoints } from "../components/Media"
 export const QUERIES = {
   small: `min-width: 552px`,
@@ -13,7 +13,7 @@ export const Paragraph = styled.p`
   font-style: normal:
   font-weight: normal;
   font-size: 16px;
-  line-height: 184.69;
+  line-height: 184.69%;
   letter-spacing: 0.03em;
 
   a {

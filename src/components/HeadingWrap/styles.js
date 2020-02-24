@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints } from "../../components/Media";
+import Container from '../../components/Container';
 import insta from "../../images/social/insta.png";
 import git from "../../images/social/git.png";
 
@@ -27,7 +28,7 @@ export const Line = styled.div`
 
 export const SocialCont = styled.div`
   width: auto;
-  height: auto:
+  height: auto;
   display: flex;
   margin-left: 20px;
 

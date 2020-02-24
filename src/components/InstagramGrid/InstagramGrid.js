@@ -159,7 +159,7 @@ function InstagramGrid(props) {
     <InstagramCTA instagramDisplay={props.instagramDisplay}>
       <LeftGrid>
         <CTAText>
-          <Heading>Get to know me a little better on instagram</Heading>
+          <Heading>Get to know me on instagram</Heading>
           <a
             target="_blank"
             rel="noopener noreferrer"

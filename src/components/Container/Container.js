@@ -5,4 +5,3 @@ export const Container = styled.div`
   margin: 100px auto;
   flex-wrap: wrap;
 `;
-

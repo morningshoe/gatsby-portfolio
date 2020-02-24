@@ -1,16 +1,18 @@
 import React from "react";
-import { Link } from "gatsby";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
+import Layout from "../components/Layout";
 import { breakpoints } from "../components/Media";
-import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
-import Layout from "../components/Layout";
+import Footer from "../components/Footer";
 import HeadingWrap from "../components/HeadingWrap/index";
+import ProjectRow from "../components/ProjectRow";
+import "../index.css";
 
 const Container = styled.div`
-  margin: 100px 0 200px 0;
+  margin: 50px 0 0 0;
   width: 100%;
   height: auto;
   display: flex;
@@ -20,7 +22,7 @@ const Container = styled.div`
   @media (min-width: ${breakpoints.mobileMax}) {
     flex-wrap: nowrap;
   }
-`
+`;
 
 const SkillTable = styled.div`
   width: 100%;
@@ -36,10 +38,10 @@ const SkillTable = styled.div`
   p {
     color: black;
     font-weight: 700;
-    min-widthL 200px;
+    min-width: 200px;
     margin: 20px 0 0 0;
 
-    @media (min-wdith: ${breakpoints}) {
+    @media (min-width: ${breakpoints.mobileMax}) {
       min-width: unset:
       margin: 30px 0;
     }
@@ -50,7 +52,7 @@ const SkillTable = styled.div`
     }
   }
   
-`
+`;
 
 const SubContainer = styled.div`
   margin: 0px 0;
@@ -62,46 +64,17 @@ const SubContainer = styled.div`
   @media (min-width: ${breakpoints.mobileMax}) {
     flex-wrap: nowrap;
   }
-`
+`;
 
 const TextContent = styled.div`
-  max-width: 700px;
-  .Paragraph {
-    a {
-      border-bottom: 2px solid transparent;
-      transition: 0.3s;
-
-      :hover {
-        border-bottom: 2px solid black;
-      }
-    }
-  }
-`
-
-const TextContentWrap = styled(TextContent)`
-  width: 100%;
-
-  ${Paragraph} {
-    margin: 40px 0px;
-  }
-  :nth-child(2) {
-    ${Paragraph} {
-      margin: 0px 0px;
-
-      @media (min-wdith: ${breakpoints}) {
-        margin: 40px 0;
-      }
-    }
-  }
-
-  @media (min-width: ${breakpoints}) {
-    width: 45%;
-  }
-`
+  max-width: 800px;
+  margin-top: 40px;
+  
+`;
 
 const SkillContent = styled.div`
   width: 100%;
-`
+`;
 
 // const HeadingImage = styled.div`
 //   margin-left: 0px;
@@ -131,7 +104,7 @@ const SubParagraph = styled(Paragraph)`
   @media (min-width: ${breakpoints.mobileMax}) {
     max-width: 70%;
   }
-`
+`;
 
 class Page extends React.Component {
   constructor(props) {
@@ -142,10 +115,10 @@ class Page extends React.Component {
   }
   render() {
     return (
-      <div>
+      <>
         <Layout>
           <Link title="Home - Alex Shoemaker" to="/">
-            {/* <Logo /> */}
+            Home
           </Link>
           <Helmet>
             <title>Alex Shoemaker - Web Developer - Full Stack</title>
@@ -170,14 +143,8 @@ class Page extends React.Component {
           </Helmet>
           <HeadingWrap />
           {/* <HeadingImage /> */}
-          <Container
-            style={{
-              alignItems: "start",
-              margin: 0,
-              justifyContent: "space-between",
-            }}
-          >
-            <TextContentWrap>
+          <Container>
+            <TextContent>
               <Paragraph>
                 I'm a 32 year old bartender in Los Angeles currently studying full stack web development.
                 <br />
@@ -197,7 +164,7 @@ class Page extends React.Component {
                 another tool in the toolbox. Not only am I excited to share my new skills
                 with the world, I'm excited to continue to learn!
               </Paragraph>
-            </TextContentWrap>
+            </TextContent>
           </Container>
           <Container>
             <SubContainer>
@@ -293,11 +260,14 @@ class Page extends React.Component {
               </SubParagraph>
             </TextContent>
           </SubContainer>
+          <SubContainer>
+            <ProjectRow />
+          </SubContainer>
         </Layout>
         <Footer instagramDisplay='flex' />
-      </div>
-    )
+      </>
+    );
   }
 }
 
-export default Page
+export default Page;

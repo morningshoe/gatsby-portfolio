@@ -24,7 +24,7 @@ const FooterCont = styled.div`
     padding: 0;
     margin: 100px 0 0 0;
   }
-`
+`;
 
 // const Variable = styled.div`
 //   display: ${props => props.projectDisplay || "none"};
@@ -51,11 +51,11 @@ const Layout = styled.div`
     padding: 100px 0 75px 0;
     margin: 75px auto 0 auto;
   }
-`
+`;
 
 const TextContent = styled.div`
   max-width: 700px;
-`
+`;
 
 const SubContainer = styled.div`
   margin: 60px 0;
@@ -68,7 +68,7 @@ const SubContainer = styled.div`
     flex-wrap: nowrap;
     margin-bottom: 50px;
   }
-`
+`;
 
 const SubParagraph = styled(Paragraph)`
   margin-top: 20px;
@@ -76,7 +76,7 @@ const SubParagraph = styled(Paragraph)`
   @media (min-width: ${breakpoints.mobileMax}) {
     max-width: 60%;
   }
-`
+`;
 
 const Container = styled.div`
   margin: 100px 0 0 0;
@@ -90,7 +90,7 @@ const Container = styled.div`
   @media (min-width: ${breakpoints.mobileMax}) {
     flex-wrap: nowrap;
   }
-`
+`;
 
 const Social = styled.div`
   a {
@@ -103,7 +103,7 @@ const Social = styled.div`
       border-bottom: 2px solid black;
     }
   }
-`
+`;
 
 function Footer(props) {
   return (
