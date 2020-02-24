@@ -127,199 +127,199 @@ const RightContent = styled.div`
   }
 `;
 
-const DuoImages = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+// const DuoImages = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 100px 0;
-  }
-`;
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     flex-wrap: nowrap;
+//     align-items: center;
+//     margin: 100px 0;
+//   }
+// `;
 
-const LeftImage = styled.div`
-  width: 100%;
-  height: 450px;
-  margin-right: 0;
-  margin-bottom: 50px;
-  background-image: url();
-  background-size: contain;
-  background-position-x: center;
-  background-repeat: no-repeat;
+// const LeftImage = styled.div`
+//   width: 100%;
+//   height: 450px;
+//   margin-right: 0;
+//   margin-bottom: 50px;
+//   background-image: url();
+//   background-size: contain;
+//   background-position-x: center;
+//   background-repeat: no-repeat;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 45%;
-    margin-bottom: 0px;
-    margin-right: 10px;
-    height: 650px;
-    background-position-x: left;
-  }
-`
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     width: 45%;
+//     margin-bottom: 0px;
+//     margin-right: 10px;
+//     height: 650px;
+//     background-position-x: left;
+//   }
+// `
 
-const RightImage = styled.div`
-  width: 100%;
-  height: 450px;
-  margin-bottom: 50px;
-  background-image: url();
-  background-size: contain;
-  background-position-x: center;
-  background-repeat: no-repeat;
+// const RightImage = styled.div`
+//   width: 100%;
+//   height: 450px;
+//   margin-bottom: 50px;
+//   background-image: url();
+//   background-size: contain;
+//   background-position-x: center;
+//   background-repeat: no-repeat;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 45%;
-    margin-bottom: 0;
-    background-position-x: right;
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     width: 45%;
+//     margin-bottom: 0;
+//     background-position-x: right;
 
-    height: 650px;
-  }
-`
+//     height: 650px;
+//   }
+// `
 
-const DuoText = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
+// const DuoText = styled.div`
+//   display: flex;
+//   flex-wrap: nowrap;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 300px 0 0 0;
-  }
-`
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     flex-wrap: nowrap;
+//     align-items: center;
+//     margin: 300px 0 0 0;
+//   }
+// `
 
-const DuoTextAlt = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
+// const DuoTextAlt = styled.div`
+//   display: flex;
+//   flex-wrap: nowrap;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: 100px 0 0 0;
-  }
-`
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     flex-wrap: nowrap;
+//     align-items: center;
+//     margin: 100px 0 0 0;
+//   }
+// `
 
-const LeftText = styled.div`
-  width: 100%;
-  height: 650px;
-  margin-right: 0;
-  margin-bottom: 50px;
-  background-size: contain;
-  background-position-x: center;
-  background-repeat: no-repeat;
+// const LeftText = styled.div`
+//   width: 100%;
+//   height: 650px;
+//   margin-right: 0;
+//   margin-bottom: 50px;
+//   background-size: contain;
+//   background-position-x: center;
+//   background-repeat: no-repeat;
 
-  ${Heading} {
-    font-size: 40px;
-  }
+//   ${Heading} {
+//     font-size: 40px;
+//   }
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 45%;
-    margin-bottom: 0px;
-    margin-right: 10%;
-    height: 650px;
-    background-position-x: left;
-  }
-`
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     width: 45%;
+//     margin-bottom: 0px;
+//     margin-right: 10%;
+//     height: 650px;
+//     background-position-x: left;
+//   }
+// `
 
-const RightText = styled.div`
-  width: 50%;
-  height: 450px;
-  margin-bottom: 50px;
-  background-image: url();
-  background-size: contain;
-  background-position-x: center;
-  background-repeat: no-repeat;
-  transform: translateY(50px);
+// const RightText = styled.div`
+//   width: 50%;
+//   height: 450px;
+//   margin-bottom: 50px;
+//   background-image: url();
+//   background-size: contain;
+//   background-position-x: center;
+//   background-repeat: no-repeat;
+//   transform: translateY(50px);
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: 45%;
-    margin-bottom: 0;
-    background-position-x: right;
-    height: 650px;
-    transform: translateY(-100px);
-  }
-`
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     width: 45%;
+//     margin-bottom: 0;
+//     background-position-x: right;
+//     height: 650px;
+//     transform: translateY(-100px);
+//   }
+// `
 
-const RightTextAlt = styled(RightText)`
-  background-image: url();
+// const RightTextAlt = styled(RightText)`
+//   background-image: url();
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    background-position-x: left;
-  }
-`
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     background-position-x: left;
+//   }
+// `
 
-const CenterText = styled.div`
-  width: 100%;
-  padding-top: 30px;
-  text-align: center;
+// const CenterText = styled.div`
+//   width: 100%;
+//   padding-top: 30px;
+//   text-align: center;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    padding-top: 120px;
-  }
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     padding-top: 120px;
+//   }
 
-  ${Heading} {
-    font-size: 40px;
-  }
+//   ${Heading} {
+//     font-size: 40px;
+//   }
 
-  ${Paragraph} {
-    max-width: 700px;
-    margin: 30px auto;
-  }
-`
+//   ${Paragraph} {
+//     max-width: 700px;
+//     margin: 30px auto;
+//   }
+// `
 
-const CenterTextAlt = styled(CenterText)`
-  width: 90%;
-  padding: 10px;
-  @media (min-width: ${breakpoints.mobileMax}) {
-    padding: 30px;
-  }
-  a {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 163.19%;
-    display: inline;
-    color: black;
-    text-decoration: none;
-    letter-spacing: 0.03em;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
+// const CenterTextAlt = styled(CenterText)`
+//   width: 90%;
+//   padding: 10px;
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     padding: 30px;
+//   }
+//   a {
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 163.19%;
+//     display: inline;
+//     color: black;
+//     text-decoration: none;
+//     letter-spacing: 0.03em;
+//     border-bottom: 2px solid transparent;
+//     transition: border-bottom 0.3s;
 
-    :hover {
-      border-bottom: 2px solid black;
-    }
+//     :hover {
+//       border-bottom: 2px solid black;
+//     }
 
-    span {
-      font-size: 20px;
-    }
-  }
-`
+//     span {
+//       font-size: 20px;
+//     }
+//   }
+// `
 
-const DuoLinks = styled.div`
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  flex-wrap;
+// const DuoLinks = styled.div`
+//   display: flex;
+//   justify-content: space-evenly;
+//   width: 100%;
+//   margin: 0 auto;
+//   margin-bottom: 50px;
+//   flex-wrap;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    flex-wrap: nowrap;
-    margin-bottom: 150px;
-    width: 60%;
-  }
-`
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     flex-wrap: nowrap;
+//     margin-bottom: 150px;
+//     width: 60%;
+//   }
+// `
 
-const LinkLeft = styled.div`
-  width: 100%;
-  margin: 10px auto;
-  text-align: center;
+// const LinkLeft = styled.div`
+//   width: 100%;
+//   margin: 10px auto;
+//   text-align: center;
 
-  @media (min-width: ${breakpoints.mobileMax}) {
-    width: unset;
-    text-align: left;
-    margin: unset;
-  }
-`
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     width: unset;
+//     text-align: left;
+//     margin: unset;
+//   }
+// `
 
-const LinkRight = styled(LinkLeft)``
+// const LinkRight = styled(LinkLeft)``
 
 function Bootcamp() {
   return (

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { breakpoints } from "../../components/Media";
-import Container from '../../components/Container';
 import insta from "../../images/social/insta.png";
 import git from "../../images/social/git.png";
 
