@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { breakpoints } from "../../components/Media";
 import insta from "../../images/social/insta.png";
 import git from "../../images/social/git.png";
+import quotation from "../../images/quotation.png";
 
 export const HeadingWrapCont = styled.div`
-  background-image: url();
+  background-image: url(${quotation});
   padding-top: 40px;
   background-position: 0 0;
   background-repeat: no-repeat;
