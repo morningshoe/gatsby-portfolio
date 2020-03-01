@@ -124,16 +124,16 @@ const RightContent = styled.div`
   }
 `;
 
-// const CenterText = styled.div`
-//   width: 100%;
-//   padding: 50px 0;
-//   text-align: center;
+const CenterText = styled.div`
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
 
-//   ${Paragraph} {
-//     max-width: 700px;
-//     margin: 30px auto;
-//   }
-// `;
+  ${Paragraph} {
+    max-width: 700px;
+    margin: 30px auto;
+  }
+`;
 
 // const DuoLinks = styled.div`
 //   display: flex;
@@ -209,12 +209,12 @@ function Janus() {
           </Link>
           <Container>
             <TextContent>
-              <Heading>Janus Blog and News Site</Heading>
+              <Heading>Janus News App</Heading>
                 <Paragraph>
                   Janus is a React based application built for
                   people who are not only interested in keeping up
                   with the news of the day, but also in sharing it
-                  with others, along with a dose of insight.  
+                  with others... with a splash of personal insight.   
                 </Paragraph>
                 <ProjectTable>
                   <tbody>
@@ -295,15 +295,57 @@ function Janus() {
                 </Paragraph>
                 <Paragraph>
                   Another requirement for this project was some sort of user
-                  authorization process. For this, we used Passport.js,
-                  a very lightweight/modular middlewear. Passport offers a
-                  number of authorization strategies, such as gmail, Facebook,
-                  GitHub, and ~500 more.  We chose to use their Local strategy,
-                  in addition to offering the user the ability to tie their Janus
-                  account to their GitHub account.   
+                  authentication process. We chose Passport.js for its ease of use, 
+                  as it is a very lightweight/modular middlewear. 
+                  Passport offers a number of authorization strategies, 
+                  such as gmail, Facebook, GitHub, and ~500 more.  We chose 
+                  to use their Local strategy, in addition to offering the 
+                  user the ability to tie their Janus account to their 
+                  GitHub account.   
                 </Paragraph>
               </RightContent>
             </WebStack>
+            {/* <Image 
+              src={}
+              alt="Janus blog posts"
+            /> */}
+            <CenterText>
+              <Heading>Problems and Processes</Heading>
+              <Paragraph>
+                Like any other projects, there were definitely
+                some bumps along the way. As usual, when working with others,
+                it's difficult to agree on things like code structure 
+                and organization. Because of the size of the project, and
+                how little time we had to execute, I knew that efficiency 
+                would be paramount. We worked very hard at keeping components 
+                as reusable as possible.
+                <br /><br />
+                We weren't very well versed in our React CSS options
+                at that point, so we decided to use React Bootstrap
+                as we were all familiar with Bootstrap as a framework already.
+                Having said that, we weren't assigned any designers for this
+                project! None of us had much experience with UX/UI best
+                practice, so there was alot to learn for this project. 
+              </Paragraph>
+            </CenterText>
+            {/* <Image 
+              src={}
+              alt="Janus blog posts"
+            /> */}
+            <TextContent>
+              <Heading>Lessons Learned</Heading>
+              <Paragraph>
+                I could really create an entirely separate page
+                to fill with all of the things I learned while creating
+                this project with Stephen and Ashkan. However, the most important
+                points involved React, Git workflow, API integration,
+                user authentication, and code organization/structure.
+                Working with other people on projects this complex becomes
+                a nightmare if you don't write clear, readable code. Also,
+                the wise words of our class instructor Jason never felt more
+                true: NAMING THINGS IS HARD. 
+              </Paragraph>
+            </TextContent>
           </Container>
         </Layout>
         <Footer />
