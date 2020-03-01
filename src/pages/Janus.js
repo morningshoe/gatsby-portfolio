@@ -1,0 +1,314 @@
+import React from 'react';
+import { Helmet } from "react-helmet";
+import Layout from "../components/layout";
+import { Link } from "gatsby";
+import styled from "styled-components";
+import { breakpoints } from "../components/Media";
+import Heading from "../components/Heading";
+import Paragraph from "../components/Paragraph";
+import Footer from "../components/Footer";
+import "../index.css";
+
+const Container = styled.div`
+  margin: 50px 0;
+  width: 100%;
+  height: auto;
+  align-items: center;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  @media (min-width ${breakpoints.mobileMax}) {
+    margin: 100px 0;
+  }
+`;
+
+const TextContent = styled.div`
+  max-width: 800px;
+  margin-top: 40px;
+
+  @media (min-width: ${breakpoints.mobileMax}) {
+    margin-top: 100px;
+  }
+
+  :nth-child(1) > ${Heading} {
+    font-size: 40px;
+
+    @media (min-width: ${breakpoints.mobileMax}) {
+      font-size: 60px;
+    }
+  }
+`;
+
+const ProjectTable = styled.table`
+  width: 100%;
+  text-align: left;
+
+  th {
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 129.69%;
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+  }
+
+  td {
+    width: 100px;
+    font-size: 14px;
+    line-height: 184.69%;
+    letter-spacing: 0.03em;
+  }
+`;
+
+const Bold = styled.td`
+  a {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    font-weight: 900;
+    color: #dd7834;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    padding-bottom: 3px;
+
+    :hover {
+      border-bottom: 2px solid #dd7834;
+    }
+  }
+`;
+
+// const Image = styled.img`
+//   margin: 50px 0 20px 0;
+//   width: 105%;
+//   transform: translate(-2.5%);
+//   height: auto;
+//   border-radius: 4px;
+
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     height: auto;
+//     margin: 50px 0 50px 0;
+//   }
+// `;
+
+const WebStack = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+
+  @media (min-width: ${breakpoints.mobileMax}) {
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 100px 0;
+  }
+`;
+
+const LeftContent = styled.div`
+  width: 100%;
+  height: 300px;
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: ${breakpoints.mobileMax}) {
+    width: 55%;
+  }
+`;
+
+const RightContent = styled.div`
+  width: 100%;
+
+  @media (min-width: ${breakpoints.mobileMax}) {
+    width: 45%;
+  }
+`;
+
+// const CenterText = styled.div`
+//   width: 100%;
+//   padding: 50px 0;
+//   text-align: center;
+
+//   ${Paragraph} {
+//     max-width: 700px;
+//     margin: 30px auto;
+//   }
+// `;
+
+// const DuoLinks = styled.div`
+//   display: flex;
+//   justify-content: space-evenly;
+//   width: 100%;
+//   margin: 0 auto;
+//   margin-bottom: 150px;
+//   flex-wrap: wrap;
+
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     flex-wrap: nowrap;
+//     width: 60%;
+//   }
+// `;
+
+// const LinkLeft = styled.div`
+//   width: 100%;
+//   margin: 10px auto;
+//   text-align: center;
+
+//   @media (min-width: ${breakpoints.mobileMax}) {
+//     width: unset;
+//     text-align: left;
+//     margin: unset;
+//   }
+// `;
+
+// const LinkRight = styled(LinkLeft)``;
+
+// const ProjectLink = styled(Paragraph)`
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 163.19%;
+//   display: inline;
+//   color: black;
+//   color: black;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   border-bottom: 2px solid white;
+//   transition: border-bottom 0.2s;
+
+//   :hover {
+//     border-bottom: 2px solid black;
+//   }
+
+//   span {
+//     font-size: 20px;
+//   }
+// `;
+
+function Janus() {
+  return (
+    <>
+      <Helmet 
+        title="Alex Shoemaker - Janus"
+        meta={[
+          {
+            name: "Alex Shoemaker",
+            content: "Portfolio - Alex Shoemaker"
+          },
+          {
+            name: "Alex Shoemaker",
+            content: "Alex Shoemaker - Full Stack Developer"
+          }
+        ]}
+        >
+          {" "}
+          <html lang="en" />
+        </Helmet>
+        <Layout>
+          <Link to="/">
+            Home
+          </Link>
+          <Container>
+            <TextContent>
+              <Heading>Janus Blog and News Site</Heading>
+                <Paragraph>
+                  Janus is a React based application built for
+                  people who are not only interested in keeping up
+                  with the news of the day, but also in sharing it
+                  with others, along with a dose of insight.  
+                </Paragraph>
+                <ProjectTable>
+                  <tbody>
+                    <tr>
+                      <th>Type</th>
+                      <th>Stack</th>
+                      <th>Live</th>
+                    </tr>
+                    <tr>
+                      <td>Educational</td>
+                      <td>React</td>
+                      <Bold>
+                        <a href="www.alex-shoemaker.com/">View Site</a>
+                      </Bold>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Node and Express</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>REST API</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>SQL</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Heroku</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </ProjectTable>
+            </TextContent>
+            {/* <Image
+              src={}
+              alt="Janus"
+            /> */}
+            <TextContent>
+              <Heading>Project Purpose and Goal</Heading>
+              <Paragraph>
+                  I built this application alongside two other students at
+                  my bootcamp as our final project.  The purpose was to
+                  showcase our "full stack" skillset.  We used React with
+                  for the front end, Node and Express with a REST API for 
+                  the server, SQL for our database, and Heroku to deploy.
+                  <br /><br />
+                  Phase 1 included a brief description of the project, as 
+                  well as wireframe mock ups of all of the pages and a 
+                  detailed description of each individual's responsibilities.
+                  I was given the position of project manager, and I was also 
+                  responsible for setting up the database, server, and all endpoints.
+                  Phase 2 included our MVP, as well as proof that we were managing
+                  our responsibilities through a workflow software such as Jira. Phase
+                  3 was a class presentation, requiring us to give an "elevator pitch",
+                  and a thorough presentation of the operation of the application
+              </Paragraph>
+            </TextContent>
+            <WebStack>
+              <LeftContent></LeftContent>
+              <RightContent>
+                <Heading>Web Stack and Explanation</Heading>
+                <Paragraph>
+                  React, Node, an Express server, and either Mongo
+                  or SQL were required for this project, as those were
+                  the main components of the stack being taught at 
+                  this bootcamp. We chose to use SQL with the Sequelize
+                  CRM because we wanted to allow users to create/update/
+                  edit their posts, and that feels much cleaner with SQL. 
+                </Paragraph>
+                <Paragraph>
+                  Another requirement for this project was some sort of user
+                  authorization process. For this, we used Passport.js,
+                  a very lightweight/modular middlewear. Passport offers a
+                  number of authorization strategies, such as gmail, Facebook,
+                  GitHub, and ~500 more.  We chose to use their Local strategy,
+                  in addition to offering the user the ability to tie their Janus
+                  account to their GitHub account.   
+                </Paragraph>
+              </RightContent>
+            </WebStack>
+          </Container>
+        </Layout>
+        <Footer />
+    </>
+  );
+}
+
+export default Janus
