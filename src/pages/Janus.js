@@ -227,7 +227,7 @@ function Janus() {
                       <td>Educational</td>
                       <td>React</td>
                       <Bold>
-                        <a href="www.alex-shoemaker.com/">View Site</a>
+                        <a href="https://janus-news.herokuapp.com/">View Site</a>
                       </Bold>
                     </tr>
                     <tr>
