@@ -1,4 +1,4 @@
-##Personal portfolio page - [alex-shoemaker.com](https://www.alex-shoemaker.com)
+## Personal portfolio page - [alex-shoemaker.com](https://www.alex-shoemaker.com)
 
 Built by Alex Shoemaker using: React, Gatsby, Styled Components, & Netlify
 
