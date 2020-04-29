@@ -36,7 +36,7 @@ function HeadingWrap() {
         </HeadingElements>
         <HeadingMain>
           Hi, I'm Alex. <br />
-          Full Stack <span>Developer</span>, <br />
+          JAMstack <span>Developer</span>, <br />
           Fan of Minimalist Design
         </HeadingMain>
       </HeadingWrapCont>

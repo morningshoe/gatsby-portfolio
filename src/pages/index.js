@@ -71,6 +71,8 @@ const TextContent = styled.div`
   margin-top: 40px;
 `
 
+
+
 const SkillContent = styled.div`
   width: 100%;
 `
@@ -126,7 +128,7 @@ function Page() {
             content="I have always been a little envious of artists and content creators, being able to share a little bit of themselves with the world. Until I discovered web development, I never had that outlet. Now I get to share a little bit myself in every application I create."
           />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://alexshoe.com/" />
+          <meta property="og:url" content="https://alex-shoemaker.com/" />
           <meta
             property="og:description"
             content="I have always been a little envious of artists and content creators, being able to share a little bit of themselves with the world. Until I discovered web development, I never had that outlet. Now I get to share a little bit myself in every application I create."
