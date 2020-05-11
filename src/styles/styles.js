@@ -10,14 +10,14 @@ export const Paragraph = styled.p`
   margin: 50px 0;
   color: #696969;
   width: 100%;
-  font-style: normal:
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 184.69%;
   letter-spacing: 0.03em;
 
   a {
-    border-bottom: 2px solid transparent:
+    border-bottom: 2px solid transparent;
     transition: 0.3s;
 
     :hover {
@@ -28,8 +28,8 @@ export const Paragraph = styled.p`
 
 export const HeadingMain = styled.h1`
   font-weight: 900;
-  font-size 7vw;
-  line-spacing: 129.69%;
+  font-size: 7vw;
+  line-height: 129.69%;
   letter-spacing: 0.03em;
   margin-bottom: 0;
   margin-left: 0px;

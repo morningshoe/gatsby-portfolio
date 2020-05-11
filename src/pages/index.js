@@ -16,7 +16,7 @@ const Container = styled.div`
   width: 100%;
   height: auto;
   display: flex;
-  align-items: center:
+  align-items: center;
   flex-wrap: wrap;
 
   @media (min-width: ${breakpoints.mobileMax}) {
@@ -42,7 +42,7 @@ const SkillTable = styled.div`
     margin: 20px 0 0 0;
 
     @media (min-width: ${breakpoints.mobileMax}) {
-      min-width: unset:
+      min-width: unset;
       margin: 30px 0;
     }
     span {
@@ -51,7 +51,6 @@ const SkillTable = styled.div`
       color: #b4e1e7;
     }
   }
-  
 `
 
 const SubContainer = styled.div`
